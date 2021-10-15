@@ -44,6 +44,10 @@ private slots:
 
     void on_btnClear_clicked();
 
+    void on_btnDivition_clicked();
+
+    void on_btnMultiplication_clicked();
+
 private:
     Ui::calculator *ui;
 };
