@@ -38,3 +38,7 @@ float CalculatorLogic::division (int num1, int num2) {
 int CalculatorLogic::multiplication (int num1, int num2) {
     return num1 * num2;
 }
+
+float CalculatorLogic::multiplication (float num1, float num2) {
+    return num1 * num2;
+}

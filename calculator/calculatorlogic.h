@@ -16,6 +16,7 @@ public:
     float division(int num1, int num2);
 
     int multiplication(int num1, int num2);
+    float multiplication(float num1, float num2);
 };
 
 #endif // CALCULATORLOGIC_H
