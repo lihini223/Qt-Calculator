@@ -10,7 +10,7 @@ string num2 = "";
 string operation = "";
 
 QString mx = "<font color=%1>%2</font>";
-string color = "black";
+string color = "#FFFFFF";
 
 CalculatorLogic cl;
 
@@ -154,7 +154,7 @@ void calculator::on_btnEqual_clicked()
     }else if (operation == "-") {
         answer = to_string(cl.subtract(stoi(num1), stoi(num2)));
     }else if (operation == "÷") {
-        answer = to_string(cl.divition(stoi(num1), stoi(num2)));
+        answer = to_string(cl.division(stoi(num1), stoi(num2)));
     }else if (operation == "X") {
         answer = to_string(cl.multiplication(stoi(num1), stoi(num2)));
     }

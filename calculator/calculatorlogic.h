@@ -8,7 +8,7 @@ public:
     CalculatorLogic();
     int add(int num1, int num2);
     int subtract(int num1, int num2);
-    float divition(int num1, int num2);
+    float division(int num1, int num2);
     int multiplication(int num1, int num2);
 };
 
