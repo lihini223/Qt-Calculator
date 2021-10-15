@@ -1,6 +1,6 @@
 #include "calculator.h"
 #include "ui_calculator.h"
-
+#include "calculatorlogic.h"
 
 #include <string>
 using namespace std;
@@ -11,6 +11,8 @@ string operation = "";
 
 QString mx = "<font color=%1>%2</font>";
 string color = "black";
+
+CalculatorLogic cl;
 
 calculator::calculator(QWidget *parent)
     : QMainWindow(parent)
@@ -148,9 +150,9 @@ void calculator::on_btnEqual_clicked()
     string answer = "";
 
     if (operation == "+"){
-        answer = to_string(stoi(num1) + stoi(num2));
+        answer = to_string(cl.add(stoi(num1), stoi(num2)));
     }else if (operation == "-") {
-        answer = to_string(stoi(num1) - stoi(num2));
+        answer = to_string(cl.subtract(stoi(num1), stoi(num2)));
     }
 
     ui->lblDisplay->setText(mx.arg(color.c_str(), answer.c_str()));
