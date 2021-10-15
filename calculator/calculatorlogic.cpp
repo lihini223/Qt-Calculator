@@ -10,6 +10,14 @@ int CalculatorLogic::add (int num1, int num2) {
     return num1 + num2;
 }
 
+float CalculatorLogic::add (float num1, float num2) {
+    return num1 + num2;
+}
+
+float CalculatorLogic::subtract (float num1, float num2) {
+    return num1 - num2;
+}
+
 int CalculatorLogic::subtract (int num1, int num2) {
     return num1 - num2;
 }
