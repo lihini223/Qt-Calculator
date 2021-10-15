@@ -153,6 +153,10 @@ void calculator::on_btnEqual_clicked()
         answer = to_string(cl.add(stoi(num1), stoi(num2)));
     }else if (operation == "-") {
         answer = to_string(cl.subtract(stoi(num1), stoi(num2)));
+    }else if (operation == "÷") {
+        answer = to_string(cl.divition(stoi(num1), stoi(num2)));
+    }else if (operation == "X") {
+        answer = to_string(cl.multiplication(stoi(num1), stoi(num2)));
     }
 
     ui->lblDisplay->setText(mx.arg(color.c_str(), answer.c_str()));
@@ -183,5 +187,19 @@ void calculator::on_btnClear_clicked()
     num1 = "";
     num2 = "";
     operation = "";
+}
+
+
+void calculator::on_btnDivition_clicked()
+{
+    operation = "÷";
+    ui->lblDisplay->setText(mx.arg(color.c_str(), operation.c_str()));
+}
+
+
+void calculator::on_btnMultiplication_clicked()
+{
+    operation = "X";
+    ui->lblDisplay->setText(mx.arg(color.c_str(), operation.c_str()));
 }
 
